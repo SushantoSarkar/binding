@@ -1,3 +1,39 @@
-body{
+.topnav{
+    @font-face {
+        font-family: Ambidexter_Regular;
+        src: url("assets/Ambidexter_Regular.woff2") format ("opentype");
+}
+
+:root {
+    --base: 16px;
+    --heading: calc(var(--base) * 2);
+
+    --type-color: darkgray;
+
+    font-family: 'Roc Grotesk';
+    src: url(<link rel="stylesheet" href="https://use.typekit.net/oqq7mky.css">);
+    font-size: var(--base);
+}
+
+@media (min-width: 600px) {
+    :root {
+        --base: 24px;
+    }
+}
+
+body {
+    padding: var(--base);
+}
+
+h1 {
+    font-size: var(--heading);
+}
+
+p {
+    color: var(--type-color);
+    max-width: 50ch;
+}
+
+a p {
     color: blue;
 }
