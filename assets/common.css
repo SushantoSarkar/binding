@@ -38,8 +38,8 @@ body {
 }
 
 body > main {
-    padding-top: var(--margin--vertical--4);
-    padding-bottom: var(--margin--vertical--4);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .chevron{
@@ -137,15 +137,22 @@ header > p{
 
     text-align: center;
     font-weight: 700;
-    font-size: 25pt;
+    font-size: 3rem;
+
+    color: var(--accent-2);
 }
 
 h1 {
     font-size: var(--heading-1);
 }
 
-p {
+main > p {
     font-family: 'roc-grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+
     color: var(--type-color);
     
     display: flex;
@@ -158,9 +165,6 @@ p {
     padding-bottom: 15vh;
     padding-left: 7vh;
     padding-right: 7vh;
-    
-    text-align: center;
-    font-weight: 400;
-    font-size: 25pt;
+   
 }
 
