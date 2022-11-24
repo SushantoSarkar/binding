@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 @font-face {
     font-family: "Ambidexter";
-    src: url("assets/Ambidexter_Regular.otf") format("opentype");
+    src: url("./Ambidexter_Regular.otf") format("opentype");
 }
 
 /*|| BASE VALUES */
@@ -145,7 +145,7 @@ h1 {
 }
 
 p {
-    font-family: "roc-grotesk";
+    font-family: 'roc-grotesk';
     color: var(--type-color);
     
     display: flex;
