@@ -1,39 +1,165 @@
-.topnav{
-    @font-face {
-        font-family: Ambidexter_Regular;
-        src: url("assets/Ambidexter_Regular.woff2") format ("opentype");
+/* TYPOGRAPHY */
+@font-face {
+    font-family: "Ambidexter";
+    src: url("assets/FontsFree-Net-Ambidexter_Regular.otf") format("opentype");
 }
 
+/*|| BASE VALUES */
 :root {
     --base: 16px;
-    --heading: calc(var(--base) * 2);
+    --heading-1: calc(var(--base) * 3);
+    --heading-2: calc(var(--base) * 2);
 
-    --type-color: darkgray;
+    --type-color: white;
+    --accent-1: #FF42EC;
+    --accent-2: #FF862E;
 
     font-family: 'Roc Grotesk';
-    src: url(<link rel="stylesheet" href="https://use.typekit.net/oqq7mky.css">);
     font-size: var(--base);
 }
 
 @media (min-width: 600px) {
     :root {
-        --base: 24px;
+        --base: 20px;
+        --heading: calc(var(--base) * 2);
+    }
+}
+
+@media (max-width: 2560px) {
+    :root {
+        --base: 20px;
+        --heading: calc(var(--base) * 6);
     }
 }
 
 body {
     padding: var(--base);
+    background-color: black;
+}
+
+body > main {
+    padding-top: var(--margin--vertical--4);
+    padding-bottom: var(--margin--vertical--4);
+}
+
+.chevron{
+    position: fixed;
+    bottom: 50vh;
+    padding: .5rem 1rem;
+    font-size: 2.5rem;
+    font-family: "roc-grotesk-condensed";
+    font-weight: bold;
+    color: var(--type-color);
+    border-radius: 1rem;
+    border: var(--accent-1) solid 1.5px;
+}
+
+.right-chevron {
+    right: -1.5rem;
+    padding-right: 2rem;
+}
+.left-chevron {
+    left: -1.5rem;
+    padding-left: 2rem;
+}
+
+.chevron:active {
+    background-color: var(--accent-1);
+}
+
+/* Top navigation Header */
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Ambidexter';
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    background-color: black;
+    padding: 1rem;
+    border-bottom: var(--type-color) solid 1.3px;
+
+}
+
+.topnav > #title {
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.topnav > #title:active {
+    color: var(--accent-1); 
+}
+
+.topnav #scroll-top {
+    float: right;
+    font-size: 2rem;
+    padding: .5rem 1.2rem;
+    color: var(--accent-2);
+    border-radius: .6rem;
+    border: var(--accent-2) solid 1.5px;
+}
+
+.topnav #scroll-top:active{
+    background-color: var(--accent-2);
+    color: black;
+}
+
+/* Homepage Hero Header font & positioning */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+header > h1{
+    padding-top: 20rem;
+    padding-bottom: 15vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+
+    font-family: 'Ambidexter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 127.6%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+header > p{
+    
+    padding-top: 5vh;
+    padding-bottom: 15vh;
+
+    text-align: center;
+    font-weight: 700;
+    font-size: 25pt;
 }
 
 h1 {
-    font-size: var(--heading);
+    font-size: var(--heading-1);
 }
 
 p {
     color: var(--type-color);
-    max-width: 50ch;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    
+    text-align: center;
+    font-weight: 400;
+    font-size: 25pt;
 }
 
-a p {
-    color: blue;
-}
