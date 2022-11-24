@@ -1,7 +1,7 @@
 /* TYPOGRAPHY */
 @font-face {
     font-family: "Ambidexter";
-    src: url("assets/FontsFree-Net-Ambidexter_Regular.otf") format("opentype");
+    src: url("assets/Ambidexter_Regular.otf") format("opentype");
 }
 
 /*|| BASE VALUES */
@@ -14,7 +14,7 @@
     --accent-1: #FF42EC;
     --accent-2: #FF862E;
 
-    font-family: 'Roc Grotesk';
+    font-family: 'roc-grotesk';
     font-size: var(--base);
 }
 
@@ -145,6 +145,7 @@ h1 {
 }
 
 p {
+    font-family: 'roc-grotesk';
     color: var(--type-color);
     
     display: flex;
