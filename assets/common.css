@@ -83,13 +83,12 @@ body > main {
     top: 0;
     left: 0;
     width: 100%;
-    font-family: "ambidexter";
+    font-family: "roc-grotesk";
     font-size: 2.5rem;
     color: #FFFFFF;
     background-color: black;
     padding: 1rem;
     border-bottom: var(--type-color) solid 1.3px;
-
 }
 
 .topnav > #title {
@@ -110,6 +109,7 @@ body > main {
     color: var(--accent-2);
     border-radius: .6rem;
     border: var(--accent-2) solid 1.5px;
+    background-color: black;
 }
 
 .topnav #scroll-top:active{
