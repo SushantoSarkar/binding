@@ -9,7 +9,7 @@ header {
 }
 
 header > h1{
-    padding-top: 10rem;
+    padding-top: 11rem;
     padding-bottom: 10vh;
     padding-left: 7vh;
     padding-right: 7vh;
@@ -25,13 +25,14 @@ header > h1{
 }
 
 header > p{
-    /* padding-top: 5vh; */
-    padding: 5vh;
-
+    padding-top: 4vh;
+    padding-bottom: 1vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    
     text-align: center;
     font-weight: 700;
     font-size: var(--blog-heading);
-
     color: var(--accent-2);
 }
 
@@ -62,6 +63,12 @@ main > p {
         padding-bottom: 10vh;
         padding-left: 15vh;
         padding-right: 15vh;
+    }
+
+    main > p {
+        padding-bottom: 20vh;
+        padding-left: 10rem;
+        padding-right: 10rem;
     }
 
 }
